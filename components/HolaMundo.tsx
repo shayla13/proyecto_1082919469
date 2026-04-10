@@ -14,11 +14,16 @@ export default function HolaMundo({
   description,
 }: HolaMundoProps) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full bg-black text-white">
+    <main className="flex flex-col items-center justify-center min-h-screen w-full bg-black">
       <div className="text-center max-w-2xl px-4">
         {/* Línea decorativa superior */}
         <div className="mb-8 flex justify-center">
-          <div className="h-0.5 w-20 bg-gradient-to-r from-transparent via-accent to-transparent"></div>
+          <div 
+            className="h-0.5 w-20"
+            style={{
+              background: 'linear-gradient(to right, transparent, #c0a060, transparent)',
+            }}
+          />
         </div>
 
         {/* Título animado */}
@@ -27,22 +32,27 @@ export default function HolaMundo({
         </h1>
 
         {/* Subtítulo animado */}
-        <p className="hero-subtext opacity-0 animate-fade-in">
+        <p className="hero-subtext">
           <AnimatedText text={subtitle} delay={500} />
         </p>
 
         {/* Descripción opcional */}
         {description && (
-          <p className="mt-6 text-sm opacity-50 max-w-sm mx-auto opacity-0 animate-fade-in">
+          <p className="mt-6 text-sm opacity-50 max-w-sm mx-auto">
             <AnimatedText text={description} delay={700} />
           </p>
         )}
 
         {/* Línea decorativa inferior */}
         <div className="mt-12 flex justify-center">
-          <div className="h-0.5 w-20 bg-gradient-to-r from-transparent via-accent to-transparent"></div>
+          <div 
+            className="h-0.5 w-20"
+            style={{
+              background: 'linear-gradient(to right, transparent, #c0a060, transparent)',
+            }}
+          />
         </div>
       </div>
-    </div>
+    </main>
   );
 }
