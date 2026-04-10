@@ -21,22 +21,23 @@ export default function AnimatedText({
   }, [delay]);
 
   return (
-    <div
-      className={`transition-all duration-1000 ease-out ${
-        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+    <span
+      className={`transition-all duration-1000 ease-out inline-block ${
+        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
       } ${className}`}
     >
       {text.split('').map((char, index) => (
         <span
-          key={index}
+          key={`${index}-${char}`}
           style={{
             opacity: visible ? 1 : 0,
             transition: `opacity 0.05s ease-out ${index * 30}ms`,
+            display: 'inline-block',
           }}
         >
-          {char}
+          {char === ' ' ? '\u00A0' : char}
         </span>
       ))}
-    </div>
+    </span>
   );
 }
