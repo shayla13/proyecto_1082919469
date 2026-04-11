@@ -1,18 +1,7 @@
-import HolaMundo from '@components/HolaMundo';
-import { readHomeData } from '@lib/dataService';
-
-export default async function HomePage() {
-  const data = await readHomeData();
-
-  const { hero, meta } = data;
-
+export default function HomePage() {
   return (
-    <>
-      <HolaMundo
-        title={hero.headline}
-        subtitle={hero.subtext}
-        description={meta.description}
-      />
-    </>
+    <main className="flex items-center justify-center min-h-screen bg-black">
+      <h1 className="text-6xl font-bold text-white">Hola Mundo</h1>
+    </main>
   );
 }
