@@ -1,0 +1,13 @@
+{
+  "id": "home",
+  "hero": {
+    "headline": "Hola Mundo",
+    "subtext": "Bienvenido al sistema. TypeScript está funcionando.",
+    "effect": "shimmer"
+  },
+  "meta": {
+    "title": "Home | Mi App",
+    "description": "Primer hito de validación del stack TypeScript"
+  },
+  "updatedAt": "2026-04-10T00:00:00Z"
+}
