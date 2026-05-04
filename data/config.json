@@ -1,0 +1,10 @@
+{
+  "siteName": "Mi App TS",
+  "version": "1.0.0",
+  "theme": "dark",
+  "locale": "es-CO",
+  "features": {
+    "animations": true,
+    "darkMode": true
+  }
+}

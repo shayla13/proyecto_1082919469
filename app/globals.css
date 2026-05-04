@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables para fuentes */
+:root {
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+
+  /* Colores */
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-accent: #c0a060;
+  --shimmer-duration: 3s;
+  --animation-delay: 0.1s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Efecto Shimmer para texto */
+.shimmer-text {
+  font-family: var(--font-display);
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #c0a060 40%,
+    #ffffff 60%,
+    #c0a060 100%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer var(--shimmer-duration) ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+/* Animación fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 500ms;
+}
+
+/* Clases de utilidad */
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 1.1;
+}
+
+.hero-subtext {
+  margin-top: 1.5rem;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
+
