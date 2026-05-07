@@ -1,0 +1,24 @@
+{
+  "system_config": {
+    "institution_name": "Institución Universitaria",
+    "allowed_domain": "evaldoc.edu.co",
+    "min_evaluations_to_publish": 3
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Administrador",
+      "email": "admin@evaldoc.edu.co",
+      "password_hash": "$2a$10$7Jr8L3Jxg.5h9i7xZk76ueGPqdkMwyTT1QuJtZYQZiQ7uT0wNWx5i",
+      "role": "admin",
+      "is_active": true,
+      "locked_until": null,
+      "failed_login_attempts": 1,
+      "created_at": "2026-05-07T10:00:00.000Z"
+    }
+  ],
+  "activation_tokens": [],
+  "password_reset_tokens": [],
+  "professors": [],
+  "periods": []
+}
