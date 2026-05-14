@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // app/api/auth/me/route.ts
 // Obtiene el usuario autenticado actualmente
 
@@ -58,6 +59,22 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(
       { error: 'Error al obtener usuario' },
       { status: 500 }
+=======
+import { NextResponse } from 'next/server';
+import { requireAuth } from '@lib/withAuth';
+
+export async function GET(req: Request) {
+  try {
+    const user = await requireAuth(req);
+    return NextResponse.json({ user }, { status: 200 });
+  } catch (error) {
+    return NextResponse.json(
+      {
+        error: 'No autorizado',
+        message: error instanceof Error ? error.message : 'No se pudo autenticar al usuario.',
+      },
+      { status: 401 }
+>>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
     );
   }
 }

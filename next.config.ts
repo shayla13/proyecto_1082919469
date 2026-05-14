@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   experimental: {
     typedRoutes: true,
   },
+<<<<<<< HEAD
   async headers() {
     return [
       {
@@ -19,6 +20,8 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+=======
+>>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
 };
 
 export default nextConfig;

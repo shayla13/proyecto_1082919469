@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // app/api/system/diagnose/route.ts
 // Diagnóstico del estado del sistema
 
@@ -91,4 +92,29 @@ export async function GET(request: NextRequest) {
       { status: 500 }
     );
   }
+=======
+import { NextResponse } from 'next/server';
+import { getSystemMode } from '@lib/dataService';
+import { Pool } from 'pg';
+
+export async function GET() {
+  const mode = getSystemMode();
+  const dbUrl = process.env.DATABASE_URL;
+  let dbConnected = false;
+  let errorMessage = null;
+
+  if (dbUrl) {
+    const pool = new Pool({ connectionString: dbUrl });
+    try {
+      await pool.query('SELECT 1');
+      dbConnected = true;
+    } catch (error) {
+      errorMessage = error instanceof Error ? error.message : 'Error de conexión desconocido.';
+    } finally {
+      await pool.end();
+    }
+  }
+
+  return NextResponse.json({ mode, dbConnected, errorMessage }, { status: 200 });
+>>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
 }

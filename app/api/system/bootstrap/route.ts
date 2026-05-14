@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // app/api/system/bootstrap/route.ts
 // Bootstrap: ejecuta migraciones y seed en Supabase
 
@@ -131,6 +132,29 @@ export async function GET(request: NextRequest) {
   } catch (error) {
     return NextResponse.json(
       { error: 'Failed to get migrations' },
+=======
+import { NextResponse } from 'next/server';
+import { getSystemMode, getSystemConfig } from '@lib/dataService';
+
+export async function POST() {
+  try {
+    const mode = getSystemMode();
+    const config = await getSystemConfig();
+    return NextResponse.json(
+      {
+        message: 'Bootstrap ejecutado.',
+        mode,
+        systemConfig: config,
+      },
+      { status: 200 }
+    );
+  } catch (error) {
+    return NextResponse.json(
+      {
+        error: 'No se pudo ejecutar bootstrap.',
+        message: error instanceof Error ? error.message : 'Error desconocido.',
+      },
+>>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
       { status: 500 }
     );
   }

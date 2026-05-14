@@ -1,7 +1,13 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+>>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 /* CSS Variables para fuentes */
 :root {
   --font-display: 'Playfair Display', serif;
@@ -13,6 +19,31 @@
   --color-accent: #c0a060;
   --shimmer-duration: 3s;
   --animation-delay: 0.1s;
+=======
+/* CSS Variables para EvalDoc */
+:root {
+  /* Fuentes */
+  --font-inter: 'Inter', sans-serif;
+
+  /* Paleta de colores EvalDoc */
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-light: #DBEAFE;
+  --color-bg-main: #F9FAFB;
+  --color-bg-card: #FFFFFF;
+  --color-text-primary: #1E3A5F;
+  --color-text-secondary: #6B7280;
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-error: #DC2626;
+  --color-rating-low: #EF4444;
+  --color-rating-mid: #F59E0B;
+  --color-rating-high: #16A34A;
+  --color-border: #E5E7EB;
+  --color-seed-bg: #FEF3C7;
+  --color-seed-text: #92400E;
+  --color-seed-border: #F59E0B;
+>>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
 }
 
 * {
@@ -25,13 +56,20 @@ html,
 body {
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
+=======
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  font-family: var(--font-inter);
+>>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
 /* Efecto Shimmer para texto */
 .shimmer-text {
   font-family: var(--font-display);
@@ -47,6 +85,35 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: shimmer var(--shimmer-duration) ease-in-out infinite;
+=======
+/* Componentes base */
+.btn-primary {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-300 transition-colors;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+}
+
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-success {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-warning {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-error {
+  @apply bg-red-100 text-red-800;
+>>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
 }
 
 @keyframes shimmer {
