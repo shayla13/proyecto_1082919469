@@ -1,86 +1,55 @@
-<<<<<<< HEAD
-# EvalDoc — Estado de Ejecución
+# ESTADO DE EJECUCIÓN — EvalDoc
 
-## Información del Proyecto
+> Bitácora oficial del proyecto
+> Estudiante: Shayla Bueno | Doc: 1082919469
+
+## INFORMACIÓN DEL PROYECTO
 
 | Campo | Valor |
 |---|---|
-| **Nombre del Proyecto** | EvalDoc — Plataforma de Evaluaciones Anónimas de Profesores |
+| **Nombre** | EvalDoc — Plataforma de Evaluaciones Anónimas de Profesores |
 | **Versión** | 1.0 |
+| **Stack** | Next.js + TypeScript + Supabase Postgres + Vercel Blob + Resend + Vercel |
 | **Estudiante** | Shayla Bueno |
 | **Documento de Identidad** | 1082919469 |
-| **Fecha de Inicio** | 14 de mayo de 2026 |
-| **Stack Tecnológico** | Next.js (App Router) + TypeScript + Supabase Postgres + Vercel Blob + Resend + Vercel |
-| **Archivos de Referencia** | `app/doc/PLAN_EVALDOC.md` — Plan maestro del sistema |
-| **Estado General** | Pendiente de inicio |
+| **Curso** | Lógica y Programación — SIST0200 |
+| **Archivo de Plan** | `doc/PLAN_EVALDOC.md` |
+| **Archivo de Prompts** | `doc/PROMPTS_EVALDOC.md` |
+| **Fecha de Inicio** | 16 de mayo de 2026 |
+| **Estado General** | En progreso |
 
 ---
 
-## Dashboard de Fases
+## DASHBOARD DE FASES
 
-| # | Fase | Rol Asignado | Estado | Inicio | Cierre | Archivo Resumen |
+| # | Fase | Rol Asignado | Estado | Inicio | Cierre | Archivo de Resumen |
 |---|---|---|---|---|---|---|
-| 1 | Bootstrap, Login, Registro y `dataService` base | Ingeniero Fullstack Senior — Arquitecto del sistema y seguridad | Pendiente | — | — | `RESUMEN_FASE_1.md` |
-| 2 | Dashboard, Layout base y página de bootstrap | Diseñador Frontend Obsesivo + Ingeniero de Sistemas | Pendiente | — | — | `RESUMEN_FASE_2.md` |
-| 3 | Gestión de Profesores | Ingeniero Backend Senior | Pendiente | — | — | `RESUMEN_FASE_3.md` |
-| 4 | Gestión de Períodos | Ingeniero Fullstack Senior | Pendiente | — | — | `RESUMEN_FASE_4.md` |
-| 5 | Evaluaciones Anónimas y Sistema de Anonimización | Ingeniero Fullstack Senior — Módulo más crítico del sistema | Pendiente | — | — | `RESUMEN_FASE_5.md` |
-| 6 | Reportes, Moderación y Configuración | Ingeniero Fullstack Senior + Diseñador Frontend | Pendiente | — | — | `RESUMEN_FASE_6.md` |
-| 7 | Pulido final y Deploy | Diseñador Frontend Obsesivo + Ingeniero Fullstack | Pendiente | — | — | `RESUMEN_FASE_7.md` |
+| 0 | Crear archivo de estado del proyecto | Ingeniero de Proyectos | Completada | 16/05/2026 | 16/05/2026 | N/A |
+| 1 | Bootstrap, Login, Registro y `dataService` base | Ingeniero Fullstack Senior — Arquitecto del sistema, autenticación y correos | En progreso | 16/05/2026 | — | `RESUMEN_FASE_1_BOOTSTRAP.md` |
+| 2 | Dashboard, Layout base y página de bootstrap | Diseñador Frontend Obsesivo + Ingeniero de Sistemas | Pendiente | — | — | `RESUMEN_FASE_2_DASHBOARD.md` |
+| 3 | Gestión de Profesores | Ingeniero Backend Senior — Catálogo de profesores e integridad del historial | Pendiente | — | — | `RESUMEN_FASE_3_PROFESORES.md` |
+| 4 | Gestión de Períodos y Notificación Masiva | Ingeniero Fullstack Senior — Períodos académicos y correo masivo | Pendiente | — | — | `RESUMEN_FASE_4_PERIODOS.md` |
+| 5 | Evaluaciones Anónimas y Sistema de Anonimización | Ingeniero Fullstack Senior — Módulo más crítico: anonimato por diseño | Pendiente | — | — | `RESUMEN_FASE_5_EVALUACIONES.md` |
+| 6 | Reportes, Moderación y Configuración | Ingeniero Fullstack Senior + Diseñador Frontend — Panel administrativo completo | Pendiente | — | — | `RESUMEN_FASE_6_ADMIN.md` |
+| 7 | Pulido final y Deploy | Diseñador Frontend Obsesivo + Ingeniero Fullstack — Cierre del proyecto | Pendiente | — | — | `RESUMEN_FASE_7_PULIDO_FINAL.md` |
 
 ---
 
-## Leyenda de Estados
+## LEYENDA DE ESTADOS
 
-| Estado | Descripción |
-|---|---|
-| **Pendiente** | La fase no ha iniciado. Depende del plan, sin trabajo iniciado. |
-| **En progreso** | La fase está activa. Se está ejecutando trabajo en tareas específicas. |
-| **Completada** | La fase finalizó exitosamente. Todas las tareas se completaron según la especificación. |
-| **Bloqueada** | La fase está detenida por una dependencia externa o problema bloqueante no resuelto. |
-| **Pausada** | La fase se pausó temporalmente sin ser completada. |
+| Estado | Significado | Descripción |
+|---|---|---|
+| **Pendiente** | La fase aún no ha comenzado. | Está esperando que se completen fases previas o el momento de ejecución. |
+| **En progreso** | La fase está en ejecución. | Se está trabajando activamente en sus tareas. |
+| **Completada** | La fase finalizó exitosamente. | El resumen fue generado, todas las pruebas pasaron, y está lista para la siguiente fase. |
+| **Bloqueada** | La fase no puede avanzar. | Hay una dependencia no satisfecha o un error bloqueante. |
+| **Pausada** | La fase se pausó temporalmente. | Puede reanudarse cuando se resuelvan los problemas o se cumplan los prerrequisitos. |
 
 ---
 
-## Historial de Ejecución
-
-> Sección append-only. Cada evento registra la fecha, hora, fase afectada, tipo de evento y detalles.
+## HISTORIAL DE EJECUCIÓN
 
 | Fecha | Hora | Fase | Evento | Detalle |
 |---|---|---|---|---|
-| 14/05/2026 | 14:30 | — | Inicialización | Archivo de estado de ejecución creado. Estado de todas las fases: Pendiente. Sistema listo para Fase 1. |
-=======
-# Estado de Ejecución — EvalDoc
-
-## Información del proyecto
-- Nombre: EvalDoc — Plataforma de Evaluaciones Anónimas de Profesores
-- Archivos de referencia: `app/doc/PLAN_EVALDOC.md`
-- Estudiante: Shayla Bueno
-- Fecha de inicio: 07 de mayo de 2026
-- Estado general: Pendiente
-
-## Dashboard de fases
-| Número | Nombre de la fase | Rol asignado | Estado | Fecha de inicio | Fecha de cierre | Archivo de resumen |
-|---|---|---|---|---|---|---|
-| Fase 1 | Bootstrap, Login, Registro y `dataService` base | Ingeniero Fullstack Senior — Arquitecto del sistema y seguridad | Pendiente |  |  |  |
-| Fase 2 | Dashboard, Layout base y página de bootstrap | Diseñador Frontend Obsesivo + Ingeniero de Sistemas | Pendiente |  |  |  |
-| Fase 3 | Gestión de Profesores | Ingeniero Backend Senior | Pendiente |  |  |  |
-| Fase 4 | Gestión de Períodos | Ingeniero Fullstack Senior | Pendiente |  |  |  |
-| Fase 5 | Evaluaciones Anónimas y Sistema de Anonimización | Ingeniero Fullstack Senior — Módulo más crítico del sistema | Pendiente |  |  |  |
-| Fase 6 | Reportes, Moderación y Configuración | Ingeniero Fullstack Senior + Diseñador Frontend | Pendiente |  |  |  |
-| Fase 7 | Pulido final y Deploy | Diseñador Frontend Obsesivo + Ingeniero Fullstack | Pendiente |  |  |  |
-
-## Leyenda de estados
-- Pendiente
-- En progreso
-- Completada
-- Bloqueada
-- Pausada
-
-## Historial de ejecución
-> Sección append-only. Cada entrada registra fecha, hora, fase, evento y detalle.
-
-| Fecha | Hora | Fase | Evento | Detalle |
-|---|---|---|---|---|
-| 07/05/2026 | 10:00 | Fase 1 | Archivo creado | Se generó el estado de ejecución a partir de `app/doc/PLAN_EVALDOC.md`; listo para comenzar Fase 1. |
->>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
+| 16/05/2026 | 10:30 | PROMPT 0 | Completada | Archivo de estado de ejecución creado. Todas las fases detectadas correctamente. Sistema listo para Fase 1. |
+| 16/05/2026 | 11:15 | FASE 1 | Inicio | Resolución de conflictos de merge en lib/supabase.ts, lib/auth.ts, package.json. Creación de migration 0004 para evaluaciones. Implementación de anonymizationService y evaluationService. Limpieza de conflictos en dataService.ts y endpoints de API. |

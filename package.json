@@ -12,25 +12,9 @@
     "validate": "npm run typecheck && npm run lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@supabase/supabase-js": "^2.105.4",
+    "@supabase/supabase-js": "^2.40.0",
     "@types/bcryptjs": "^2.4.6",
     "@types/pg": "^8.20.0",
-    "@vercel/blob": "^2.3.3",
-    "bcryptjs": "^3.0.3",
-    "framer-motion": "^11.0.0",
-    "jose": "^6.2.3",
-    "next": "^14.0.0",
-    "pg": "^8.20.0",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
-    "resend": "^6.12.3",
-    "zod": "^3.22.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-=======
-    "@supabase/supabase-js": "^2.34.0",
     "@vercel/blob": "^2.3.3",
     "bcryptjs": "^2.4.3",
     "class-variance-authority": "^0.7.1",
@@ -38,18 +22,15 @@
     "framer-motion": "^11.0.0",
     "jose": "^6.2.3",
     "next": "^14.0.0",
-    "pg": "^8.12.0",
+    "pg": "^8.20.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
-    "resend": "^1.0.0",
+    "resend": "^3.0.0",
     "tailwind-merge": "^3.5.0",
     "zod": "^3.22.0"
   },
   "devDependencies": {
-    "@types/bcryptjs": "^2.4.3",
     "@types/node": "^20.0.0",
-    "@types/pg": "^8.6.7",
->>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "autoprefixer": "^10.4.0",

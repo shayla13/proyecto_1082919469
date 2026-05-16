@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // app/api/auth/register/route.ts
 // Registro con validación de dominio institucional
 
@@ -96,42 +95,14 @@ export async function POST(request: NextRequest) {
       {
         message: 'Registro exitoso. Revisa tu correo para activar tu cuenta.',
         email: user.email,
-=======
-import { NextResponse } from 'next/server';
-import { RegisterSchema } from '@lib/schemas';
-import { createUser, createActivationToken } from '@lib/dataService';
-import { sendVerificationEmail } from '@lib/emailService';
-
-export async function POST(req: Request) {
-  try {
-    const body = await req.json();
-    const { name, email, password } = RegisterSchema.parse(body);
-
-    const user = await createUser({ name, email, password });
-    const token = await createActivationToken(user.id);
-    await sendVerificationEmail(user.email, token);
-
-    return NextResponse.json(
-      {
-        message: 'Usuario registrado. Revisa tu correo para activar la cuenta.',
->>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
       },
       { status: 201 }
     );
   } catch (error) {
-<<<<<<< HEAD
     console.error('Register error:', error);
     return NextResponse.json(
       { error: 'Error en el registro' },
       { status: 500 }
-=======
-    return NextResponse.json(
-      {
-        error: 'No se pudo registrar el usuario.',
-        message: error instanceof Error ? error.message : 'Error desconocido.',
-      },
-      { status: error instanceof Error && error.message.includes('Solo se aceptan correos del dominio') ? 400 : 400 }
->>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
     );
   }
 }

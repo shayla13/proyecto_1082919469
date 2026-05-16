@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // lib/supabase.ts
 // Cliente Supabase para operaciones de base de datos
 
@@ -25,21 +24,9 @@ export const supabaseClient = createClient(supabaseUrl, supabaseAnonKey);
 
 // Cliente con rol de servicio (para el servidor)
 export const supabaseAdmin = createClient(supabaseUrl, supabaseServiceRoleKey);
-=======
-import { createClient } from '@supabase/supabase-js';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 export const isSupabaseEnabled = Boolean(supabaseUrl && supabaseAnonKey);
 
-export const supabase = isSupabaseEnabled
-  ? createClient(supabaseUrl as string, supabaseAnonKey as string)
-  : null;
-
 export const getAppUrl = () =>
   process.env.NEXT_PUBLIC_APP_URL ||
-  process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : 'http://localhost:3000';
->>>>>>> 1907d1cb95630356fd0811f087de7928e0f7a901
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
