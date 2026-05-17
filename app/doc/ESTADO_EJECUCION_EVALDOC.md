@@ -25,8 +25,8 @@
 | # | Fase | Rol Asignado | Estado | Inicio | Cierre | Archivo de Resumen |
 |---|---|---|---|---|---|---|
 | 0 | Crear archivo de estado del proyecto | Ingeniero de Proyectos | Completada | 16/05/2026 | 16/05/2026 | N/A |
-| 1 | Bootstrap, Login, Registro y `dataService` base | Ingeniero Fullstack Senior — Arquitecto del sistema, autenticación y correos | En progreso | 16/05/2026 | — | `RESUMEN_FASE_1_BOOTSTRAP.md` |
-| 2 | Dashboard, Layout base y página de bootstrap | Diseñador Frontend Obsesivo + Ingeniero de Sistemas | Pendiente | — | — | `RESUMEN_FASE_2_DASHBOARD.md` |
+| 1 | Bootstrap, Login, Registro y `dataService` base | Ingeniero Fullstack Senior — Arquitecto del sistema, autenticación y correos | Completada | 16/05/2026 | 16/05/2026 | `RESUMEN_FASE_1_BOOTSTRAP.md` |
+| 2 | Dashboard, Layout base y página de bootstrap | Diseñador Frontend Obsesivo + Ingeniero de Sistemas | Completada | 16/05/2026 | 16/05/2026 | `RESUMEN_FASE_2_DASHBOARD.md` |
 | 3 | Gestión de Profesores | Ingeniero Backend Senior — Catálogo de profesores e integridad del historial | Pendiente | — | — | `RESUMEN_FASE_3_PROFESORES.md` |
 | 4 | Gestión de Períodos y Notificación Masiva | Ingeniero Fullstack Senior — Períodos académicos y correo masivo | Pendiente | — | — | `RESUMEN_FASE_4_PERIODOS.md` |
 | 5 | Evaluaciones Anónimas y Sistema de Anonimización | Ingeniero Fullstack Senior — Módulo más crítico: anonimato por diseño | Pendiente | — | — | `RESUMEN_FASE_5_EVALUACIONES.md` |
@@ -53,3 +53,6 @@
 |---|---|---|---|---|
 | 16/05/2026 | 10:30 | PROMPT 0 | Completada | Archivo de estado de ejecución creado. Todas las fases detectadas correctamente. Sistema listo para Fase 1. |
 | 16/05/2026 | 11:15 | FASE 1 | Inicio | Resolución de conflictos de merge en lib/supabase.ts, lib/auth.ts, package.json. Creación de migration 0004 para evaluaciones. Implementación de anonymizationService y evaluationService. Limpieza de conflictos en dataService.ts y endpoints de API. |
+| 16/05/2026 | 14:30 | FASE 1 | Completada | Fase 1 completada exitosamente. Login, registro, dataService implementados. |
+| 16/05/2026 | 14:35 | FASE 2 | Inicio | Iniciando implementación del dashboard, layout base y página de bootstrap. |
+| 16/05/2026 | 15:00 | FASE 2 | Completada | Dashboard completado con PeriodBanner y ProgressTracker. AppLayout mejorado con sidebar condicional. Landing page pública funcional. Sistema listo para Fase 3. |
